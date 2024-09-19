@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <title>Contate-nos</title>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, inicial-scale=1" />
+     <meta name="description"
+          content="Fale conosco sobre o site!">
+     <meta name="keywords"
+          content="Pentatlo, hipismo, natação, laser-run, esgrima, contate-nos, fale conosco">
+     <meta name="author" content="Mariana Rafaela">
+     <link rel="icon" type="image/jpg" href="iconcontato.png" />
+     <link rel="stylesheet" type="text/css" href="pentatlo.css">
+     <script language="javascript" type="text/javascript">
+          function valida() {
+               var name = form1.nome.value;
+               var emai = form1.email.value;
+               var avalie = form1.avaliacao.value;
+
+               if (name == "") {
+                    alert("Preencha o campo com o seu nome!");
+                    form1.nome.focus();
+                    return false;
+               }
+
+               if (emai == "") {
+                    alert("Preencha o campo com o seu email!");
+                    form1.email.focus();
+                    return false;
+               }
+
+               if (avalie == "") {
+                    alert("Preencha o campo com a sua nota para o site!");
+                    form1.avaliacao.focus();
+                    return false;
+               }
+
+               alert("Dados enviados com sucesso!");
+               form1.reset();
+          }
+     </script>
+</head>
+
+<body>
+     <div id="header">
+          <ul id="nav">
+               <li><a href=""><img src="logopentatlo.png" width="75px" height="75px"></a></li>
+               <li><a href="index.html">home</a></li>
+               <li><a href="sobre.html">sobre</a></li>
+               <li><a href="destaque.html">destaque</a></li>
+               <li><a href="desafios.html">desafios</a></li>
+               <li><a href="medalhas.html">medalhas</a></li>
+               <li><a href="contato.html" class="ativa">contato</a></li>
+          </ul>
+     </div>
+
+     <div class="contato">
+          <h1>Fale conosco!</h1>
+          <form name="form1" action="#" method="get"><!--nome form para validar JS-->
+               <table>
+                    <tr>
+                         <td>
+                              <label>Nome</label>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              <input type="text " name="nome" class="text" size="50" placeholder="Preencha aqui o seu nome!" autofocus />
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              <label>E-mail</label>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              <input type="text" name="email" class="text" size="50" placeholder="Preencha aqui o seu email!" autofocus />
+                         </td>
+                    </tr>
+                    <tr>
+                         <td> 
+                              <label>Deixe uma nota!</label>
+                              <select name="avaliacao" class="text">
+                                   <option>
+                                   <option>😶
+                                   <option>🤨
+                                   <option>😐
+                                   <option>😀
+                                   <option>😁
+                              </select>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td>
+                              <textarea id="textarea" name="textarea " rows="10" cols="52" placeholder="Deixe aqui seu comentário."></textarea>
+                         </td>
+                    
+                    </tr>
+                    <tr>
+                         <td>
+                              <input type="submit" onclick="return valida()" value="Enviar">
+                              <input type="reset" name="limpa" value="Limpar">
+                         </td>
+                         
+               </table>
+          </form>
+     </div>
+
+
+     <div id="footer">
+          <p>Mariana Rafaela 2024 - &copyTodos os direitos reservados</p>
+          <br>
+          <p>Trabalho acadêmico sem fins lucrativos</p>
+     </div>
+</body>
+
+</html>

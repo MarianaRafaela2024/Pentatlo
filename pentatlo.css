@@ -1,0 +1,347 @@
+/*Arquivo CSS - página HOME*/
+
+* {
+     margin: 0px;
+     padding: 0px;
+}
+
+body {
+     background: #00000F;
+     font-family: arial;
+     margin-top: 5px;
+}
+
+/*Inicio do cabeçalho */
+#header {
+     width: 900px;
+     height: 140px;
+     margin: 0px auto;
+     /*Zerou as 4 margins e centralizou dentro dos 900px*/
+     background: #1B33BF;
+}
+
+#header h1 {
+     display: block;
+     /*bloqueia linha*/
+     float: left;
+}
+
+#nav {
+     list-style: none;
+     /*retira marcadores*/
+     padding-left: 0px;
+     display: block;
+     float: left;
+     margin-left: 15px;
+     margin-top: 60px;
+}
+
+img {
+     margin-top: -31px;
+}
+
+#nav li {
+     float: left;
+     margin-left: 40px;
+}
+
+#nav a {
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 17px;
+     padding-top: 8px;
+     color: #f5f5f5;
+     font-weight: bold;
+}
+
+#nav a:hover {
+     border-bottom: 5px solid #BF0404;
+}
+
+ul#nav a.ativa {
+     border-bottom: 5px solid #BF0404;
+}
+
+/*fim do cabeçalho */
+
+/* inicio area section */
+#sec_home {
+     width: 900px;
+     height: 450px;
+     background: #f5f5f5;
+     margin: 15px auto;
+     /* sem pixel pode ser % ou Em todos */
+}
+
+.article {
+     width: 500px;
+     float: left;
+     margin: 5px 8px;
+}
+
+.article h1 {
+     font-size: 25px;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: center;
+     color: #BF0404;
+     margin-top: 20px;
+}
+
+.article p {
+     padding-top: 5px;
+     padding-left: 10px;
+     font-size: 18px;
+     text-align: justify;
+}
+
+.botao {
+     width: 500px;
+     float: left;
+     margin: 0px 8px;
+     text-align: center;
+     padding-top: 35px;
+}
+
+.botao a {
+     text-decoration: none;
+     background-color: #BF0404;
+     color: #f5f5f5;
+     border-radius: 10px;
+     padding: 10px;
+     font-size: 18px;
+}
+
+.fotoindex {
+     padding-top: 100px;
+     padding-left: 530px;
+}
+
+/* fim area section */
+
+/*AREA SOBRE*/
+
+#sec_sobre {
+     width: 900px;
+     height: 3540px;
+     background: #f5f5f5;
+     margin: 15px auto;
+     font-size: 18px;
+
+}
+
+
+.sobre {
+     text-align: justify;
+     width: 700px;
+     margin: 20px 70px 20px 90px;
+}
+
+.sobre h1 {
+     font-size: 27px;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: center;
+     color: #BF0404;
+     margin-top: 20px;
+     padding: 20px 0px 30px 0px;
+}
+
+.sobre h2 {
+     text-align: left;
+     color: #1B33BF;
+     margin-bottom: 10px;
+     font-size: 25px;
+
+}
+
+.sobre li {
+     padding: 10px 20px;
+     list-style: none;
+
+}
+
+.sobre li b {
+     color: #0b1446;
+}
+
+.fotosobre {
+     margin: 30px 0px;
+     margin-left: 250px;
+
+}
+
+
+/*AREA DESTAQUE*/
+
+#sec_destaque {
+     width: 900px;
+     height: 1400px;
+     background: #f5f5f5;
+     margin: 15px auto;
+     font-size: 18px;
+     padding-top: 20px;
+}
+
+.destaque h1 {
+     font-size: 25px;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: center;
+     color: #BF0404;
+     margin-top: 20px;
+     padding: 20px 0px 30px 0px;
+}
+
+.destaque {
+     text-align: justify;
+     width: 700px;
+     margin: 20px 70px 30px 90px;
+}
+
+.destaque h2 {
+     text-align: left;
+     color: #1B33BF;
+     margin-bottom: 10px;
+}
+
+.img1 {
+     padding: 40px 0px 40px 200px;
+}
+
+/*página DESAFIOS*/
+
+#sec_desafios {
+     width: 900px;
+     height: 1720px;
+     background: #f5f5f5;
+     margin: 15px auto;
+     text-align: center;
+     font-size: 18px;
+     padding-top: 20px;
+}
+
+.desafios {
+     text-align: justify;
+     width: 700px;
+     margin: 20px 70px 20px 90px;
+     padding: 10px;
+}
+
+.desafios b {
+     color: #0b1446;
+     font-size: 22px;
+}
+
+.imgdesafio {
+     margin: 0px auto;
+     padding-top: 30px;
+}
+
+/*página MEDALHAS*/
+
+#sec_medalhas {
+     width: 900px;
+     height: 800px;
+     background: #f5f5f5;
+     margin: 15px auto;
+     text-align: center;
+     font-size: 18px;
+     padding-top: 20px;
+}
+
+h1 {
+     margin: 20px;
+     text-align: center;
+     color: #BF0404;
+}
+
+.medal-table {
+     width: 650px;
+     margin: 0px auto;
+     border-collapse: collapse;
+     background-color: #fff;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.medal-table th , .medal-table td {
+     padding: 12px;
+     border: 1px solid #ddd;
+     text-align: center;
+}
+
+.medal-table th {
+     background-color: #0b1446;
+     color: white;
+}
+
+.medal-table tr:nth-child(even) {
+     background-color: #f2f2f2;
+}
+
+.medal-table tr:hover {
+     background-color: #ddd;
+}
+
+
+
+/*página CONTATO*/
+
+.contato {
+     width: 900px;
+     height: 470px;
+     background: #f5f5f5;
+     margin: 15px auto;
+     text-align: center;
+
+}
+
+.contato table {
+     margin: 0px auto;
+}
+
+.text {
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+
+.contato h1 {
+     padding-top: 3%;
+     padding-bottom: 3%;
+}
+
+.contato textarea {
+     resize: none;
+     margin-top: 10px;
+}
+
+
+
+/*  AREA RODAPÉ */
+#footer {
+     width: 900px;
+     height: 75px;
+     background: #1B33BF;
+     color: #f5f5f5;
+     padding-top: 20px;
+     margin: 0px auto;
+}
+
+#footer p {
+     font-size: 12px;
+     text-align: center;
+}
+
+#footer a {
+     display: block;
+     float: right;
+}
+
+/* fim area rodape */
+
+
+/*RESPOVIVIDADE Ipad  e ipad mini*/
+@media screen and (min-width:768px) and (max-width:1024px){/*ipad*/
+     body, div{}
+     #footer { margin-left:0px;}		
+}	
